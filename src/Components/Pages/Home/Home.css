@@ -1,0 +1,103 @@
+.main-body {
+    display: grid;
+    grid-template-rows: 1fr 0.5fr 0.2fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #282c34;
+
+}
+
+.carosol {
+    background-color: white;
+    height: 50vh;
+    grid-column: 1/4;
+    grid-row: 1/2;
+}
+
+.more-information {
+    grid-row: 2/3;
+    grid-column: 1/4;
+    color: white;
+    margin-top: 30px;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+
+.all-tiles {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.image {
+    filter: brightness(40%);
+    zoom: 0%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+
+}
+
+.image:hover {
+    transform: scale(1.08);
+}
+
+.all-tiles {
+    grid-row: 1/1;
+    overflow: hidden;
+    border-radius: 25px;
+    border: 2px solid white;
+    margin:10px;
+}
+
+.all-tiles .items-cards-1 {
+    grid-column: 1/2;   
+}
+
+.all-tiles .items-cards-2 {
+    grid-column: 2/3;
+}
+
+.all-tiles .items-cards-3 {
+    grid-column: 3/4;
+}
+
+
+
+.items-cards-1-text {
+    filter: brightness(100%);
+    grid-row: 1/1;
+    grid-column: 1/2;
+    align-self: center;
+    color: white;
+}
+
+.items-cards-2-text {
+    filter: brightness(100%);
+    grid-row: 1/1;
+    grid-column: 2/3;
+    align-self: center;
+    color: white;
+}
+
+
+.items-cards-3-text {
+    filter: brightness(100%);
+    grid-row: 1/1;
+    grid-column: 3/4;
+    align-self: center;
+    color: white;
+}
+
+
+
+.footer {
+    color: white;
+    grid-column: 1/4;
+    grid-row: 3/4;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
